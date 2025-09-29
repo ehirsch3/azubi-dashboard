@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.login-wrapper {
+  @apply flex justify-center items-center min-h-screen bg-base-200;
+}
+
+.login-card {
+  @apply card w-96 bg-base-100 shadow-xl p-6;
+}
+
+.login-title {
+  @apply text-2xl font-bold text-center mb-4;
+}
+
+.error-message {
+  @apply text-red-500 text-center;
+}
+
+.login-form {
+  @apply space-y-4;
+}
+
+.login-input {
+  @apply input input-bordered w-full;
+}
+
+.login-button {
+  @apply btn btn-primary w-full;
+}

@@ -1,0 +1,93 @@
+/* AdminGradeEntry.css */
+
+/* General Table Styling */
+.grades-table {
+  @apply table-auto w-full border-collapse mb-6;
+}
+
+.grades-table th,
+.grades-table td {
+  @apply px-4 py-3 text-left text-sm;
+}
+
+.grades-detail-table {
+  @apply table-auto w-full border-collapse mt-4;
+}
+
+.grades-detail-table th,
+.grades-detail-table td {
+  @apply px-4 py-3 text-left border-b border-gray-500;
+}
+
+/* Alternate Row Colors */
+.grades-table tr:nth-child(odd) {
+  @apply bg-slate-800; /* Lighter shade for odd rows */
+}
+
+.grades-table tr:nth-child(even) {
+  @apply bg-slate-700; /* Darker shade for even rows */
+}
+
+/* Grade Styling */
+.grade {
+  @apply font-bold py-1 px-3 rounded text-center;
+}
+
+/* Grade Specific Styling */
+.grade-1 { @apply bg-green-200 text-green-800; }
+.grade-2 { @apply bg-green-500 text-white; }
+.grade-3 { @apply bg-yellow-400 text-black; }
+.grade-4 { @apply bg-orange-500 text-white; }
+.grade-5 { @apply bg-red-500 text-white; }
+.grade-6 { @apply bg-red-700 text-white; }
+
+/* Table Header Styling */
+.grades-table th {
+  @apply bg-slate-900 text-white uppercase tracking-wide;
+}
+
+/* Table Body Text */
+.grades-table td {
+  @apply text-gray-200;
+}
+
+/* Styling for the Name and Class Snapshot Columns */
+.apprentice-name {
+  @apply font-medium;
+}
+
+.class-snapshot {
+  @apply italic text-gray-400;
+}
+
+/* Expandable Row Styling */
+.grades-detail-table {
+  @apply mt-6 bg-slate-700 rounded-lg;
+}
+
+/* Add Sort Indicators */
+.grades-detail-table th {
+  @apply cursor-pointer pr-8;
+}
+
+.grades-detail-table th:hover {
+  @apply bg-slate-600;
+}
+
+/* Sort Indicators */
+.grades-detail-table th.sorted-asc::after {
+  content: " ▲";
+}
+
+.grades-detail-table th.sorted-desc::after {
+  content: " ▼";
+}
+
+/* Admin Page Layout */
+.admin-grade-entry {
+  @apply font-sans text-gray-200 bg-slate-800 p-8 rounded-xl;
+}
+
+.title {
+  @apply text-3xl text-white mb-6 text-center;
+}

@@ -1,0 +1,89 @@
+/* Modal overlay to cover the screen */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal content box */
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  width: 450px; /* Slightly wider for better readability */
+  max-width: 90%; /* Responsive */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  max-height: 80vh; /* Prevents overflow */
+  overflow-y: auto; /* Enables scrolling for long modals */
+}
+
+/* Modal title */
+.modal-content h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #333;
+}
+
+/* Info paragraphs */
+.modal-content p {
+  margin-bottom: 8px;
+  font-size: 1em;
+  color: #444;
+}
+
+/* Scrollable content box */
+.modal-content .report-content-box {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  max-height: 150px; /* Limits height */
+  overflow-y: auto; /* Enables scrolling */
+  margin-bottom: 15px;
+  font-size: 0.95em;
+  line-height: 1.4;
+  white-space: pre-line; /* Retains formatting */
+}
+
+/* Styling for the day list */
+.modal-content ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.modal-content ul li {
+  background-color: #eef2ff;
+  border-left: 4px solid #818aff;
+  padding: 8px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  font-size: 0.95em;
+}
+
+/* Close button styling */
+.modal-close-button {
+  background-color: #ff5c5c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+.modal-close-button:hover {
+  background-color: #e74c3c;
+}

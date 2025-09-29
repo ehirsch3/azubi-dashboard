@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Set a dark background for the project */
+.home-container {
+  @apply container mx-auto p-4 bg-slate-800 min-h-screen;
+}
+
+.dashboard-title {
+  @apply text-2xl font-bold mb-6 text-white;
+}
+
+.grid-dashboard {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4;
+}
+
+/* All widgets share the same background as the project, with a white border and white text */
+.widget {
+  @apply bg-slate-800 border border-white p-4 rounded-lg shadow-md text-left text-white;
+}
+
+.widget h2 {
+  @apply text-lg font-semibold mb-1;
+}
+
+.widget p,
+.widget li {
+  @apply text-sm;
+}
+
+.widget ul {
+  @apply list-disc list-inside;
+}
